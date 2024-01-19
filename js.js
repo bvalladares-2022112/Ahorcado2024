@@ -1,0 +1,14 @@
+const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const palbras = ['PEZ', 'GIMNASIO', 'PERRO', 'FLOR', 'BICICLETA', 'BALON', 'MARIPOSA', 'CUADRO', 'MONTAÑA', 'TEATRO', 'TELEVISION', 'CASCADA', 'CALENDARIO', 'VENTANA', 'LLUVIA'];
+        const palabraElejida = words[Math.floor(Math.random() * words.length)];
+        const palabraDisplay = document.getElementById('wordDisplay');
+        const guessesDisplay = document.getElementById('guessesDisplay');
+        const botonesLetrasDiv = document.getElementById('botonesLetras');
+        const mensajeDiv = document.getElementById('mensaje');
+        const intentosRestantesDiv = document.getElementById('intentosRestantes'); 
+        let palabrasDadas = [];
+        let intentosIncorrectos = 0;
+        let letrasUsadas = {};
+        let intentosRestantes = 7; 
+        let juegoFinalizado = false;
