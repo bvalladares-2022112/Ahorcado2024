@@ -1,6 +1,6 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
-const palbras = ['PEZ', 'GIMNASIO', 'PERRO', 'FLOR', 'BICICLETA', 'BALON', 'MARIPOSA', 'CUADRO', 'MONTAÑA', 'TEATRO', 'TELEVISION', 'CASCADA', 'CALENDARIO', 'VENTANA', 'LLUVIA'];
+const words= ['PEZ', 'GIMNASIO', 'PERRO', 'FLOR', 'BICICLETA', 'BALON', 'MARIPOSA', 'CUADRO', 'MONTAÑA', 'TEATRO', 'TELEVISION', 'CASCADA', 'CALENDARIO', 'VENTANA', 'LLUVIA'];
 const palabraElejida = words[Math.floor(Math.random() * words.length)];
 const palabraDisplay = document.getElementById('wordDisplay');
 const guessesDisplay = document.getElementById('guessesDisplay');
